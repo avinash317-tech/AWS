@@ -2,7 +2,7 @@
 	- create samTemplate.yaml file in project root directory.
 		- make sure indentation should be correct.
 		- file name should be same as given or if you change the template name, make sure it is uplated in buildspec file.
-	- add the samTemplate.yaml file name in buildSpec file under srtifects section.
+	- add the samTemplate.yaml file name in buildSpec file under artifects section.
 	- create codePipe Line for the deployment of lambda and Api gateway.
 	- Find the example for develop the samTemplate file.
 		

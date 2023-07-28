@@ -1,7 +1,7 @@
 	# Code for Reading file from S3 using Java
 	
 	
-		We have a file that is in S3-Bucket and we have to read that file From S3 bucket. So we have write a code in S3FileRead.java.
+		We have a file that is in S3-Bucket and we have to read that file From S3 bucket. So we have write a code in S3FileRead.java class.
 	
 		I am going to explain the one method that reads file from S3, Rest of the functions work same. 
 		

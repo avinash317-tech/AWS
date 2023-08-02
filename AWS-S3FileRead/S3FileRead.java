@@ -1,4 +1,17 @@
-	//read file from S3
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Map;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.model.GetObjectRequest;
+import com.amazonaws.services.s3.model.S3Object;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;	
+
+//read file from S3
 	public InputStream s3FileReadInput(String bucketName , String fileName) {
 		AmazonS3Client client = new AmazonS3Client();
 		GetObjectRequest request = new GetObjectRequest(bucketName,fileName);
